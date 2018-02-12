@@ -11,8 +11,25 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div id="pic"><span title="Feed kerchov!"><img src="/img/cassowary.jpg" alt="Cassowary" /></span></div>
-      <button id="button" type="button">Feed Cassowary</button>
+      <form id="form">
+        <p>Choose your difficulty level</p>
+        <input type="radio" id="easy" value="easy" name="difficulty">
+        <label for="easy">Easy</label>
+        <input type="radio" id="medium" value="medium" name="difficulty">
+        <label for="medium">Medium</label>
+        <input type="radio" id="hard" value="hard" name="difficulty">
+        <label for="hard">Hard</label>
+        <button type="submit">Start game</button>
+      </form>
+      <div id="game">
+        <div id="pic"></div>
+        <button id="button" type="button">Feed Cassowary</button>
+        <button id="sleep">Sleep with Cassowary</button>
+        <button id="play">Play chess with Cassowary</button>
+        <a href="/"><button id="restart">Restart Game</button></a>
+      </div>
+      <div id="foodLevel">
+      </div>
     </div>
   </body>
 </html>
